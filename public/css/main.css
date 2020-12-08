@@ -1,0 +1,114 @@
+html,
+body {
+    background-color: white;
+    color: #000000;
+    font-family: "Nunito", sans-serif;
+    font-weight: 200;
+    font-size: 16px;
+    height: 100vh;
+    margin: 0;
+}
+p {
+    margin: 20px 0;
+    font-weight: bold;
+}
+button {
+    background: rgb(0, 183, 255);
+    padding: 8px 10px;
+    color: rgb(255, 255, 255);
+    border: 0;
+    margin-top: 20px;
+}
+a.back {
+    display: black;
+    text-align: center;
+    margin-top: 30px;
+    color: #e9f9ff;
+    margin-bottom: 20px;
+}
+
+.wrapper {
+    max-width: 1140px;
+    padding: 10px;
+    margin: 20px auto;
+}
+.create-item {
+    background: transparent;
+    padding: 10px;
+}
+label,
+select {
+    display: block;
+}
+label {
+    margin-top: 30px;
+}
+
+input[type="checkbox"] {
+    margin: 10px;
+}
+select {
+    padding: 8px;
+    width: 200px;
+}
+input[type="submit"] {
+    background: rgb(0, 183, 255);
+    padding: 8px 20px;
+    color: rgb(15, 15, 15);
+    border: 0;
+    margin-top: 20px;
+}
+.full-height {
+    height: 100vh;
+}
+
+.flex-center {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+.position-ref {
+    position: relative;
+}
+
+.top-right {
+    position: absolute;
+    right: 10px;
+    top: 18px;
+}
+
+.content {
+    text-align: center;
+}
+
+.links > a {
+    color: #000000;
+    padding: 0 25px;
+    font-size: 13px;
+    font-weight: 600;
+    letter-spacing: 0.1rem;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.m-b-md {
+    margin-bottom: 30px;
+}
+footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background: black;
+    padding: 10px;
+    text-align: center;
+    color: white;
+}
+.title {
+    font-size: 36px;
+    text-transform: uppercase;
+    border-bottom: 4px solid;
+    padding: 12px 0;
+    color: black;
+}
