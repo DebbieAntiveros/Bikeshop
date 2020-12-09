@@ -7,7 +7,7 @@
     <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
-    <title> Kexy's Bikeshop </title>
+    <title> Inventory Management System </title>
 
     <!-- Scripts -->
     <script src="{{ asset('js/app.js') }}" defer></script>
@@ -58,6 +58,15 @@ html,body {
     background-color: #f1f2f6;
     color:black;
 }
+#btn{
+  transition-duration: 0.4s;
+}
+
+#btn:hover {
+  background-color: gray;
+  color: white;
+}
+
 </style>
 
 

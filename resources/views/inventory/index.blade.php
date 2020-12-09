@@ -48,8 +48,8 @@
 							</div>
 						</div>
 						<div class="modal-footer">
-							<button type="button" class="btn btn-light" data-dismiss="modal">Close</button>
-							<button type="submit" class="btn btn-light"> Add Item</button>
+							<button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+							<button type="submit" class="btn btn-primary"> Add Item</button>
 						</div>
 				</div>
 			</div>
@@ -88,7 +88,7 @@
 				<td> {{ $inventory -> quantity}}</td>
 				<td> {{ $inventory -> quantity_left}}</td>
 				<td> {{ $inventory -> quantity * $inventory -> selling_price}}</td>
-				<td> {{ ($inventory -> quantity - $inventory -> quantity_left) *  $inventory -> selling_price - $inventory -> original_price }}</td>
+				<td> {{ ($inventory -> quantity - $inventory -> quantity_left) *  ($inventory -> selling_price - $inventory -> original_price) }}</td>
 				<td>
 					<button type="submit" class="btn btn-light" data-toggle="modal" data-target="#exampleModal1" style="margin-top:0px">
 						<svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-pencil-square" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
@@ -142,8 +142,8 @@
 										</div>
 									</div>
 									<div class="modal-footer">
-										<button type="button" class="btn btn-light" data-dismiss="modal">Close</button>
-										<button type="submit" class="btn btn-light"> Update Item</button>
+										<button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+										<button type="submit" class="btn btn-primary"> Update Item</button>
 									</div>
 							</div>
 						</div>
