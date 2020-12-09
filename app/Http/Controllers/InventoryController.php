@@ -50,8 +50,6 @@ class InventoryController extends Controller
         $inventory -> selling_price=request('selling_price');
         $inventory -> quantity=request('quantity');
         $inventory -> quantity_left=request('quantity_left');
-        $inventory -> total=request('total');
-        $inventory -> profit=request('profit');
 
         Alert::success('Success', 'The item has been updated successfully.');
         $inventory -> save();

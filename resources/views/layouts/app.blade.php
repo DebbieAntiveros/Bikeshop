@@ -26,6 +26,9 @@
     <link href="/css/datepicker.css" rel="stylesheet" type="text/css">
     <script src="/js/datepicker.js"></script>
 
+    <!--Icons -->
+    <link rel = "icon" href="https://www.flaticon.com/svg/static/icons/svg/3456/3456373.svg" type = "image/x-icon"> 
+
 <style>
 .dataTables_filter{
   margin-top: 20px;
@@ -33,13 +36,22 @@
 .dataTable_length{
   margin-bottom: 100px;
 }
+.dataTables_paginate{
+    margin-bottom: 50px;
+}
+html,body {
+	margin:0;
+	background:#c8c8c8;
+	background:url(https://hdqwalls.com/download/material-design-4k-2048x1152.jpg) fixed;
+	background-size: cover;
+}
 </style>
 
 
 </head>
 <body>
     <div id="app">
-        <nav class="navbar navbar-expand-md navbar-light bg-white shadow-sm">
+        <nav class="navbar navbar-expand-md navbar-light" style="bakcground-color: transparent;">
             <div class="container">
                 <a class="navbar-brand" href="{{ url('/') }}">
                 Home
@@ -115,9 +127,9 @@
         ordering: false,
         lenghtMenu: [[5,10,25,50,1],[5,10,25,50,"All"]],
         pagingType: 'full_numbers'
-        
-    })
+    });
     } );
+    
     </script>
      @yield('scripts')
 
