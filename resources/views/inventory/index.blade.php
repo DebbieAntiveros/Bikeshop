@@ -88,7 +88,7 @@
 				<td> {{ $inventory -> quantity}}</td>
 				<td> {{ $inventory -> quantity_left}}</td>
 				<td> {{ $inventory -> quantity * $inventory -> selling_price}}</td>
-				<td> {{ ($inventory -> quantity - $inventory -> quantity_left) * $inventory -> selling_price }}</td>
+				<td> {{ ($inventory -> quantity - $inventory -> quantity_left) *  $inventory -> selling_price - $inventory -> original_price }}</td>
 				<td>
 					<button type="submit" class="btn btn-light" data-toggle="modal" data-target="#exampleModal1" style="margin-top:0px">
 						<svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-pencil-square" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
@@ -161,3 +161,20 @@
 	</table>
 </div>
 </div> @endsection
+@section('scripts')
+@if (Session::has('sweet_alert.alert'))
+    <script>
+        swal({
+            text: "{!! Session::get('sweet_alert.text') !!}",
+            title: "{!! Session::get('sweet_alert.title') !!}",
+            timer: {!! Session::get('sweet_alert.timer') !!},
+            type: "{!! Session::get('sweet_alert.type') !!}",
+            showConfirmButton: "{!! Session::get('sweet_alert.showConfirmButton') !!}",
+            confirmButtonText: "{!! Session::get('sweet_alert.confirmButtonText') !!}",
+            confirmButtonColor: "#AEDEF4"
+
+            // more options
+        });
+    </script>
+@endif
+@endsection

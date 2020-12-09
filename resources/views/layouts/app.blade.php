@@ -7,7 +7,7 @@
     <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
-    <title>Kexy's Bikeshop</title>
+    <title> Kexy's Bikeshop </title>
 
     <!-- Scripts -->
     <script src="{{ asset('js/app.js') }}" defer></script>
@@ -33,17 +33,30 @@
 .dataTables_filter{
   margin-top: 20px;
 }
+table {
+  text-align: left;
+  position: relative;
+  border-collapse: collapse; 
+}
+th, td {
+  padding: 0.25rem;
+}
+th {
+  position: sticky;
+  top: 0; /* Don't forget this, required for the stickiness */
+  box-shadow: 0 2px 2px -1px rgba(0, 0, 0, 0.4);
+}
 .dataTable_length{
   margin-bottom: 100px;
+  justify-content: center;
 }
 .dataTables_paginate{
     margin-bottom: 50px;
 }
 html,body {
 	margin:0;
-	background:#c8c8c8;
-	background:url(https://hdqwalls.com/download/material-design-4k-2048x1152.jpg) fixed;
-	background-size: cover;
+    background-color: #f1f2f6;
+    color:black;
 }
 </style>
 

@@ -78,6 +78,8 @@ class InventoryController extends Controller
         return redirect('/inventories')->with('msg','The item has been saved.');
     }
     public function destroy($id) {
+        
+        
         Alert::toast('The item has been deleted!','success');
         $inventory = Inventory::findOrFail($id);
         $inventory->delete();

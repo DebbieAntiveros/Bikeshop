@@ -12,10 +12,7 @@
                             {{ session('status') }}
                         </div>
                     @endif
-
                     {{ __('You are logged in!') }}
-                    <p> <a href="/items"> View Product </a> </p>
-                    <p> <a href="/inventories"> View Inventory </a> </p>
                 </div>
             </div>
         </div>
