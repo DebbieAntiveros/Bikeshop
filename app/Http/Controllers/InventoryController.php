@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Inventory;
+use Illuminate\Support\Facades\DB;
 use RealRashid\SweetAlert\Facades\Alert;
 
 class InventoryController extends Controller
@@ -22,7 +23,7 @@ class InventoryController extends Controller
     }
 
     public function index(){
-      $inventory = Inventory::paginate(5);
+      $inventory = Inventory::all();
         return view('inventory.index',[
             'inventory' => $inventory,]);
     }
@@ -86,4 +87,11 @@ class InventoryController extends Controller
 
         return redirect('/inventories');
     }
+    public function deleteItem($id){
+
+        $inventory = Inventory::findOrFail($id);
+        $inventory->delete();
+
+    }
+    
 }

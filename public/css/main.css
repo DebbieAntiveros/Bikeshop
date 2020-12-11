@@ -112,3 +112,6 @@ footer {
     padding: 12px 0;
     color: black;
 }
+table th{
+ background:  lightsteelblue;   
+}

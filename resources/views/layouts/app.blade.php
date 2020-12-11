@@ -29,49 +29,53 @@
     <!--Icons -->
     <link rel = "icon" href="https://www.flaticon.com/svg/static/icons/svg/3456/3456373.svg" type = "image/x-icon"> 
 
-<style>
-.dataTables_filter{
-  margin-top: 20px;
-}
-table {
-  text-align: left;
-  position: relative;
-  border-collapse: collapse; 
-}
-th, td {
-  padding: 0.25rem;
-}
-th {
-  position: sticky;
-  top: 0; /* Don't forget this, required for the stickiness */
-  box-shadow: 0 2px 2px -1px rgba(0, 0, 0, 0.4);
-}
-.dataTable_length{
-  margin-bottom: 100px;
-  justify-content: center;
-}
-.dataTables_paginate{
-    margin-bottom: 50px;
-}
-html,body {
-	margin:0;
-    background-color: #f1f2f6;
-    color:black;
-}
-#btn{
-  transition-duration: 0.4s;
-}
+    <style>
+    .dataTables_filter {
+        margin-top: 20px;
+    }
 
-#btn:hover {
-  background-color: gray;
-  color: white;
-}
+    table {
+        text-align: left;
+        position: relative;
+        border-collapse: collapse;
+    }
 
-</style>
+    th, td {
+        padding: 0.25rem;
+    }
+
+    th {
+        position: sticky;
+        top: 0;
+    /* Don't forget this, required for the stickiness */
+    box-shadow: 0 2px 2px -1px rgba(0, 0, 0, 0.4);
+    }
+    .dataTable_length{
+    width: 30px;
+    }
+    .dataTables_paginate{
+        margin-bottom: 50px;
+    }
+    html,body {
+        margin:0;
+        background-color: #f1f2f6;
+        color:black;
+    }
+    #btn{
+    transition-duration: 0.4s;
+    }
+
+    #btn:hover {
+    background-color: gray;
+    color: white;
+    }
+
+    </style>
 
 
 </head>
 <body>
+
     <div id="app">
         <nav class="navbar navbar-expand-md navbar-light" style="bakcground-color: transparent;">
             <div class="container">
@@ -142,16 +146,15 @@ html,body {
     <script src="http://cdn.datatables.net/1.10.22/js/jquery.dataTables.min.js"> </script>
     <script src="/js/datepicker.en.js"></script>    
     <script>
-    $(document).ready( function () {
-        $.noConflict();
-        
-        $('#data-table').DataTable({
-        ordering: false,
-        lenghtMenu: [[5,10,25,50,1],[5,10,25,50,"All"]],
-        pagingType: 'full_numbers'
-    });
-    } );
-    
+            $(document).ready( function () {
+                $.noConflict();
+                
+                $('#data-table').DataTable({
+                ordering: false,
+                lenghtMenu: [[5,10,25,50,1],[5,10,25,50,"All"]],
+                pagingType: 'full_numbers'
+            });
+            });
     </script>
      @yield('scripts')
 

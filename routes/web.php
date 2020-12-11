@@ -22,11 +22,11 @@ Route::get('/', function(){
     return view('welcome');
     });
 Route::get('/home', function(){
-        return view('welcome');
-        });
-        Route::get('/data', function(){
-            return view('data');
-            });
+    return view('welcome');
+    });
+Route::get('/data', function(){
+    return view('data');
+    });
 Auth::routes([
 
     'register' => true

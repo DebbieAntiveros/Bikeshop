@@ -68,10 +68,12 @@ class ItemController extends Controller
         return redirect('/items');
     }
     public function destroy($id) {
+
         Alert::toast('The item has been deleted!','success');
         $item = Items::findOrFail($id);
         $item->delete();
-        return redirect('items');
+        return response()->json($item);
+        
     }
     
 }

@@ -8,9 +8,9 @@
                         <h1>
                             Inventory Management<br>
                         </h1>
-                        <medium class="text-muted" style="margin-right: 100px;">Manage your stocks and profit digitally</medium>
+                        <medium class="text-muted" style="margin-right: 40px;">Manage your stocks and profit digitally</medium>
                         <br>
-                        <a button class="btn btn-primary" href="{{ route('login') }}" style="margin-top: 10px; margin-right: 275px; border-radius: 35px; transition-duration: 0.4s; width: 45%;"> Get Started </button> </a>
+                        <a button class="btn btn-primary" href="{{ route('register') }}" style="margin-top: 10px; margin-right: 50px; border-radius: 35px; transition-duration: 0.4s; width: 45%;"> Get Started </button> </a>
                     </div>
                     <div class="col"> 
                         <img src="/css/man.png" width="auto" height="500px" alt="" style="margin-top: 0px; margin-left: 130px;"> 
