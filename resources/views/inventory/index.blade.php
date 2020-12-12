@@ -22,7 +22,20 @@
 					?>	
 			</div>
 			<div class="col-4">
-			Items Quantity below 10: [ ]
+			<?php 
+							$servername="localhost";
+							$username="root";
+							$password="";
+							$dbname="bikeshop_db";
+							$con=mysqli_connect($servername,$username,$password,$dbname);
+
+							$sql="SELECT count(id) AS total FROM inventories WHERE quantity_left<10";
+							$result=mysqli_query($con,$sql);
+							$values=mysqli_fetch_assoc($result);
+							$num_rows=$values['total'];
+
+							echo "Items Quantity below 10: [ $num_rows ]";
+					?>	
 			</div>
   		</div>
 	<div class="col">

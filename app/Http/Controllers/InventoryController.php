@@ -26,6 +26,9 @@ class InventoryController extends Controller
       $inventory = Inventory::all();
         return view('inventory.index',[
             'inventory' => $inventory,]);
+
+            
+
     }
     public function show($id){
         
